@@ -7,7 +7,7 @@ export default async function Home() {
   
   return (
     <main>
-      <h1>Hello Notflix</h1>
+      <div className="grid gap-16 grid-cols-fluid">
       {res.results.map((movie) => (
         <Movie 
         key={movie.id}
@@ -17,6 +17,7 @@ export default async function Home() {
         release_date={movie.release_date}
         />
       ))}
+      </div>
      
     </main>
   );
