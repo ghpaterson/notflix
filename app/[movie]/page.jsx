@@ -18,18 +18,20 @@ export default async function MovieDetail({params}){
     return(
         <div>
             <div>
-            <h2>{res.title}</h2>
-            <h2>{res.release_date}</h2>
-            <h2>Length: {res.runtime} mins</h2>
-            <h2>{res.status}</h2>
-            <Image 
-            className="my-12" 
-            src={imagePath + res.poster_path}
-            width={800} 
-            height={800} 
-            priority
-            />
-            <p>{res.overview}</p>
+                <h2>{res.title}</h2>
+                <h2>{res.release_date}</h2>
+                <h2>Length: {res.runtime} mins</h2>
+                <h2>{res.status}</h2>
+                <p>{res.overview}</p>
+            </div>
+            <div>
+                <Image 
+                className="my-12" 
+                src={imagePath + res.poster_path}
+                width={400} 
+                height={400} 
+                priority
+                />
             </div>
         </div>
     )

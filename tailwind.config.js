@@ -17,6 +17,9 @@ module.exports = {
         wave: "url('/bluewave.png')",
       },
     },
+    fontFamily: {
+      noir: ["noir", "sans-serif"],
+    },
   },
   plugins: [],
 };

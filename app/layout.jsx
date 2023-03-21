@@ -11,10 +11,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head/>
       <body className='mx-32 my-12 bg-transparent'>
-        <nav className='w-screen-min h-20 bg-transparent mb-20'>
+        <nav className='w-screen-min h-20 bg-transparent rounded-3xl mb-14'>
           <ul className='flex items-center justify-between gap-4'>
-            <li className='text-6xl text-red-500 my-6'>
-              <a href='#'>NOTFLIX</a>
+            <li className=' font-noir text-8xl text-red-500 my-4'>
+              <a href='/'>NOTFLIX</a>
             </li>
             <li className='text-gray-100'>
               <a href='#'>Home</a>
