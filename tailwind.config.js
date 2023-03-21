@@ -13,6 +13,9 @@ module.exports = {
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(15rem, 1fr))",
       },
+      backgroundImage: {
+        wave: "url('/bluewave.png')",
+      },
     },
   },
   plugins: [],

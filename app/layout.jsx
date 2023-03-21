@@ -10,7 +10,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head/>
-      <body className='mx-32 my-12'>{children}</body>
+      <body className='mx-32 my-12 bg-transparent'>
+        <nav className='w-screen-min h-20 bg-transparent mb-20'>
+          <ul className='flex items-center justify-between gap-4'>
+            <li className='text-6xl text-red-500 my-6'>
+              <a href='#'>NOTFLIX</a>
+            </li>
+            <li className='text-gray-100'>
+              <a href='#'>Home</a>
+            </li>
+          </ul>
+        </nav>
+
+        {children}
+        </body>
     </html>
   )
 }
